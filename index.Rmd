@@ -1,0 +1,272 @@
+---
+title: "Com licença, você tem um momento para falar sobre o github"
+subtitle: "e sobre controle de versão?"
+author: "<br><br>Steven Dutt Ross"
+date: "<br><br>30-09-2019"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["assets/shinobi.css", "assets/ninpo.css", "assets/ninjutsu.css"]
+    seal: false
+    self_contained: false
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+exclude: true
+<style type="text/css">
+code.r{
+  font-size: 16px;
+}
+pre {
+  font-size: 16px !important;
+}
+</style>
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+---
+class: split-two
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+.column.bg-main1[
+.font2.comfortaa.coral[Com licença, você tem um momento para falar sobre o Github]<br><br>
+.font_large.comfortaa[Integrado com o `r anicon::faa('r-project', animate='bounce', size=1,color='#ffff87')` com o Github `r anicon::faa('github', animate='float', size=1,color='#ffff87')`]
+</br></br></br></br>
+.font2.comfortaa[Steven Dutt-Ross <br><br> Professor da  .yellow[UNIRIO]<br>]
+.font1.comfortaa[`r anicon::faa('link', animate='vertical', rtext='&nbsp;gae.uniriotec.br', color='white')` <br>]
+
+.font_large.comfortaa[`r anicon::faa('github', animate='pulse', rtext=' DATAUNIRIO', color='white')` <br> `r anicon::faa('twitter', animate='pulse', rtext=' @RJengajado', color='#ffff87')`<br>`r anicon::faa('envelope', animate='pulse', rtext=' steven.ross@uniriotec.br', color='white')`<br>]
+.font_large.comfortaa[GAE 2019, Rio de Janeiro</br>
+30 Setembro, 2019]
+</br></br></br>
+.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;https://bit.ly/2nMINjf', color='white')`
+]
+]
+.column.bg-main2.center[
+</br></br>
+.vmiddle[<img src="slide_img/IMG_1.jpg" width=95%>]
+]
+
+
+---
+layout: false
+class: bg-main1
+
+.center[<img src="slide_img/inicio1.png" width=100%>]
+
+---
+layout: false
+class: bg-main1
+
+.center[<img src="slide_img/inicio2.png" width=100%>]
+
+---
+layout: false
+class: bg-main1
+
+# .yellow[O que é] o Github?
+
+# .yellow[Para que serve] o Github?
+
+# .yellow[Como eu uso] o Github?
+
+# .yellow[Referências] para o Github
+
+
+.center[<img src="slide_img/IMG_1.jpg" width=50%>]
+
+---
+layout: false
+class: bg-main1
+
+</br>
+## Para entender o GitHub, você deve primeiro .yellow[entender o Git].
+ </br>
+## O Git é um .yellow[sistema de controle de versão] de código aberto.
+
+</br>
+## Quando os desenvolvedores criam algo (um gráfico do R, por exemplo), .yellow[eles fazem constantes alterações no código], lançando novas versões desse mesmo gráfico.
+</br>
+## Os sistemas de controle de versão .yellow[mantêm essas revisões] corretas, .yellow[armazenando as modificações] em um .yellow[repositório central]. 
+
+---
+class: bg-main1
+
+# .yellow[Referências] 
+
+.center[<img src="slide_img/Imagem1.png" width=70%>]
+
+.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;https://peerj.com/preprints/3159.pdf', color='white')`
+]
+
+---
+class: bg-main1
+
+# .yellow[Referências] 
+
+.center[<img src="slide_img/Imagem2.png" width=70%>]
+
+.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;https://happygitwithr.com/', color='white')`
+]
+
+
+---
+class: bg-main1
+
+# 1. Controle de versão
+
+.center[<img src="slide_img/Imagem3.png" width=70%>]
+
+---
+class: bg-main1
+
+# 1. Controle de versão
+
+.center[<img src="slide_img/git-diff-window.png" width=70%>]
+
+
+---
+class: bg-main1
+
+# 2. Sincronizar o meu computador de casa com o do trabalho
+
+
+.center[<img src="slide_img/Imagem4.png" width=70%>]
+
+
+---
+class: bg-main1
+
+# 3. Compartilhar o código
+
+.center[<img src="slide_img/Imagem5.png" width=90%>]
+
+---
+class: bg-main1
+
+# 3. Compartilhar o código
+
+.center[<img src="slide_img/Imagem6.png" width=90%>]
+
+
+---
+class: bg-main1
+
+# 3. Compartilhar o código
+</br></br></br></br>
+## source('https://raw.githubusercontent.com/DATAUNIRIO/Estatistica_Espacial/master/padrao_de_area/funcao_para_mapa.R')
+
+---
+class: bg-main1
+
+# 3. Compartilhar o código
+</br></br></br></br>
+### library(RCurl)
+</br>
+### x <- getURL("https://raw.githubusercontent.com/DATAUNIRIO/Base_de_dados/master/Estados.csv")
+</br>
+### BaseUF <- read.csv(text=x, header=T, quote="", sep=";",dec = ",")
+</br>
+### remove(x)
+
+---
+class: bg-main1
+
+# 4. Instalar pacotes de fora do cran
+
+.center[<img src="slide_img/Imagem7.png" width=50%>]
+Para instalar o ThanosR
+devtools::install_github("DATAUNIRIO/ThanosR")
+
+library(ThanosR)
+data("mtcars")
+dim(mtcars)
+metade_da_base_de_dados<-estalar_dedos(mtcars)
+dim(metade_da_base_de_dados)
+
+---
+class: bg-main1
+
+# 5. Trabalhar em equipe
+<img src="slide_img/Imagem8.png" width=90%>
+
+
+---
+class: bg-main1
+
+# 5. Trabalhar em equipe
+<img src="slide_img/Imagem9.png" width=90%>
+
+---
+class: bg-main1
+
+# 6. Hospedar o meu site
+
+<img src="slide_img/Imagem10.png" width=90%>
+.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;https://dataunirio.github.io/latinr2019_SSC_presentation/#1', color='white')`
+]
+
+
+---
+layout: false
+class: bg-main1
+
+# .yellow[O que é] o Github? `r icon::fa('check')`
+
+# .yellow[Para que serve] o Github? `r icon::fa('check')``
+
+# .yellow[Como eu uso] o Github? `r icon::fa('times')`
+
+# .yellow[Referências] para o Github `r icon::fa('check')`
+
+
+.center[<img src="slide_img/IMG_1.jpg" width=50%>]
+
+---
+class: bg-main1
+# 3 Maneiras de usar o github: 
+.yellow[prompt de comando]  </br>
+<img src="slide_img/git-prompt2.png" width=70%>
+
+
+---
+class: bg-main1
+
+# 3 Maneiras de usar o github: 
+.yellow[RStudio] </br>
+<img src="slide_img/Screen Shot 2015-11-09 at 4.59.40 PM.png" width=70%>
+
+---
+class: bg-main1
+
+# 3 Maneiras de usar o github: 
+.yellow[Github Desktop] </br>
+<img src="slide_img/github-desktop-screenshot-windows.png" width=70%>
+
+
+---
+class: bg-main1
+
+# Ainda quero falar sobre duas coisas:
+</br>
+</br>
+# 1. Pull request
+# 2. Issues
+
+---
+class: bg-main1
+
+# Bitbucket
+<img src="slide_img/Imagem11.png" width=90%>
+.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;https://bitbucket.org/', color='white')`
+]
+
+---
+class: bg-main1 center
+#Thanks!
+
+<img src="slide_img/thank-you.gif" width=90%>
+
+
