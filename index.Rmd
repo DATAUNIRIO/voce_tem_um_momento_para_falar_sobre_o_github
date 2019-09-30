@@ -34,14 +34,11 @@ class: split-two
 .font2.comfortaa.coral[Com licença, você tem um momento para falar sobre o Github]<br><br>
 .font_large.comfortaa[Integrado com o `r anicon::faa('r-project', animate='bounce', size=1,color='#ffff87')` com o Github `r anicon::faa('github', animate='float', size=1,color='#ffff87')`]
 </br></br></br></br>
-.font2.comfortaa[Steven Dutt-Ross <br><br> Professor da  .yellow[UNIRIO]<br>]
+.font2.comfortaa[Steven Dutt-Ross <br><br> Professor do  .yellow[DMQ/UNIRIO]<br>]
 .font1.comfortaa[`r anicon::faa('link', animate='vertical', rtext='&nbsp;gae.uniriotec.br', color='white')` <br>]
 
 .font_large.comfortaa[`r anicon::faa('github', animate='pulse', rtext=' DATAUNIRIO', color='white')` <br> `r anicon::faa('twitter', animate='pulse', rtext=' @RJengajado', color='#ffff87')`<br>`r anicon::faa('envelope', animate='pulse', rtext=' steven.ross@uniriotec.br', color='white')`<br>]
-.font_large.comfortaa[GAE 2019, Rio de Janeiro</br>
-30 Setembro, 2019]
-</br></br></br>
-.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;https://bit.ly/2nMINjf', color='white')`
+.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;http://bit.ly/2nSke4m', color='white')`
 ]
 ]
 .column.bg-main2.center[
@@ -109,6 +106,17 @@ class: bg-main1
 .center[<img src="slide_img/Imagem2.png" width=70%>]
 
 .font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;https://happygitwithr.com/', color='white')`
+]
+
+
+---
+class: bg-main1
+
+# .yellow[Referências] 
+
+.center[<img src="slide_img/Imagem12.png" width=70%>]
+
+.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;https://www.curso-r.com/blog/2017-07-17-rstudio-e-github/', color='white')`
 ]
 
 
@@ -270,3 +278,5 @@ class: bg-main1 center
 <img src="slide_img/thank-you.gif" width=90%>
 
 
+.font_large[`r anicon::faa('link', animate='vertical', rtext='&nbsp;http://bit.ly/2nSke4m', color='white')`
+]
